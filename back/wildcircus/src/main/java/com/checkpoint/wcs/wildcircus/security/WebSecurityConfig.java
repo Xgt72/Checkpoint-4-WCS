@@ -60,6 +60,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				antMatchers( "/register").permitAll(). // à supprimer après création d'un utilisateur.
 				// toutes les autres nécessitent un token valide
 				antMatchers( "/performance").permitAll().
+				antMatchers("/customer").permitAll().
 				anyRequest().authenticated().and().
 				// on s'assure d'utiliser des stateless sessions
 				exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
