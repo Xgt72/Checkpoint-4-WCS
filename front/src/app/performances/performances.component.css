@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Goodfish-bolder";
+    src: url("../../assets/font/goodfishbd.ttf") format("truetype");
+}
+
+section {
+    border: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.card {
+    border: 2px solid rgba(0, 0, 255, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 255, 0.9);
+}
+
+.card-header {
+    font-family: "Goodfish-bolder-it", Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 255, 0.5);
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
