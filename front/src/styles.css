@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "GoodFish";
+    src: url("./assets/font/goodfishrg.ttf") format("truetype");
+  }
+
+  p {
+    font-family: "GoodFish", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: justify;
+  }
