@@ -1,3 +1,9 @@
-<p>
-  performances works!
-</p>
+<app-section-title [sectionTitle]="title"></app-section-title>
+<section *ngIf="sectionPerformance != null">
+    <div class="card" *ngFor="let performance of sectionPerformance">
+        <div class="card-body">
+            <h5 class="card-title">{{performance.title}}</h5>
+            <p class="card-text">{{performance.content}}</p>
+        </div>
+    </div>
+</section>

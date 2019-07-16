@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
     .sectionTitle h2 {
-      font-size: 3rem !important;
+      font-size: 1.8rem !important;
     }
   }
   
@@ -15,7 +15,7 @@
     padding: 2rem;
     text-align: center;
     font-family: "Trocadero-Regular", Arial, Helvetica, sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #f37921;
     background-color: rgba(185, 185, 185, 0);
     border-width: 2px;
