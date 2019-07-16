@@ -12,6 +12,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginComponent } from './login/login.component';
 import { MainButtonComponent } from './main-button/main-button.component';
+import { SectionTitleComponent } from './section-title/section-title.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MainButtonComponent } from './main-button/main-button.component';
     ContactUsComponent,
     NavBarComponent,
     LoginComponent,
-    MainButtonComponent
+    MainButtonComponent,
+    SectionTitleComponent
   ],
   imports: [
     BrowserModule,
