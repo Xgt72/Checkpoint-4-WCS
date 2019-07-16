@@ -3,3 +3,7 @@ span.about {
     font-weight: bolder;
     text-shadow: 2px 2px 2px black;
 }
+
+section {
+    border: 2px solid rgba(0,0,255,0.5);
+}

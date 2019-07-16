@@ -1,3 +1,13 @@
-<p>
-  performances works!
-</p>
+<app-section-title [sectionTitle]="title"></app-section-title>
+<section class="container p-1" *ngIf="sectionPerformance != null">
+    <div class="row justify-content-around p-2">
+        <div class="card m-3" style="max-width: 25rem;" *ngFor="let performance of sectionPerformance">
+            <div class="card-header">
+                {{performance.title}}
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{performance.content}}</p>
+            </div>
+        </div>
+    </div>
+</section>
