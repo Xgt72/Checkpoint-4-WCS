@@ -1,7 +1,5 @@
 package com.checkpoint.wcs.wildcircus.entities;
 
-import jdk.internal.perf.Perf;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
