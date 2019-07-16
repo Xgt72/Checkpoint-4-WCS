@@ -10,6 +10,9 @@ import { FindUsComponent } from './find-us/find-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LoginComponent } from './login/login.component';
+import { MainButtonComponent } from './main-button/main-button.component';
+import { SectionTitleComponent } from './section-title/section-title.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     FindUsComponent,
     GalleryComponent,
     ContactUsComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginComponent,
+    MainButtonComponent,
+    SectionTitleComponent
   ],
   imports: [
     BrowserModule,
