@@ -1,0 +1,29 @@
+.borderBurgerMenu {
+    border: 1px solid rgb(0,0,255);
+}
+
+i {
+    color:rgb(0,0,255);
+}
+
+.postMessage {
+    border: 2px solid rgba(0,0,255,0.5);
+    background-color: rgba(0,0,255,0.5);
+    padding: 10px;
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.postMessage:hover {
+    border: 2px solid rgba(0,0,255,0.5);
+    background-color: transparent;
+    color: rgba(0,0,255,0.5) !important;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 574px) {
+    .postMessage {
+        width: 200px;
+    }
+}
