@@ -1,0 +1,91 @@
+.footer {
+  color: white;
+  background-color: rgba(0, 0, 255, 0.5);
+  width: auto;
+  height: auto;
+  font-size: 13px;
+}
+
+.titleSchool {
+  text-decoration: underline;
+}
+
+a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  height: 90px;
+}
+
+.row {
+  margin-right: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  color: blue;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #f37921;
+}
+
+#socialBox li {
+  list-style: none;
+}
+
+#socialBox li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  border-radius: 10px;
+  transition: 0.4s;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black,1px -1px 1px black;
+}
+
+.instagram {
+  background: linear-gradient(to right top, #f8ed04, #fddb00, #ffca00, #ffb800, #ffa700, #ff9019, #ff782b, #ff603a, #ff345c, #ff0089, #ff00c1, #f300ff);
+  ;
+}
+
+.facebook {
+  background: rgb(76, 105, 186);
+}
+
+.twitter {
+  background: rgb(0, 196, 252);
+}
+
+.youtube {
+  background: rgb(198, 4, 4);
+}
+
+.pinterest {
+  background: rgb(255, 0, 0);
+}
+
+.snapchat {
+  background: yellow;
+}
+
+#socialBox li a:hover .fab, #socialBox li a:hover .fas {
+  transform: rotateY(360deg);
+  color: #333;
+  text-shadow: none;
+}
+
+#socialBox li a .fab, #socialBox li a .fas {
+  transition: 0.8s;
+}
