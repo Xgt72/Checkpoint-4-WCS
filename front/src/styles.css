@@ -3,7 +3,7 @@
     src: url("./assets/font/goodfishrg.ttf") format("truetype");
   }
 
-  p {
+  p, a {
     font-family: "GoodFish", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-align: justify;
