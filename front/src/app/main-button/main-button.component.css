@@ -1,0 +1,15 @@
+.mainButton {
+    border: 2px solid rgba(0,0,255,0.5);
+    background-color: rgba(0,0,255,0.5);
+    padding: 10px;
+    color: white!important;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.mainButton:hover {
+    border: 2px solid rgba(0,0,255,0.5);
+    background-color: transparent;
+    color:rgba(0,0,255,0.5)!important;
+    transition: all .3s ease-in-out;
+}

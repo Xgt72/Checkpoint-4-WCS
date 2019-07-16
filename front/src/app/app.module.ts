@@ -11,6 +11,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginComponent } from './login/login.component';
+import { MainButtonComponent } from './main-button/main-button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoginComponent } from './login/login.component';
     GalleryComponent,
     ContactUsComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    MainButtonComponent
   ],
   imports: [
     BrowserModule,
