@@ -7,6 +7,7 @@ import { Cart } from '../models/cart';
 import { CartService } from "../services/cart.service";
 import { LineCartService } from "../services/line-cart.service";
 import { LineCart } from '../models/line-cart';
+import { SendEmailService } from "../services/send-email.service";
 
 @Component({
   selector: 'app-buy-tickets',
@@ -41,7 +42,8 @@ export class BuyTicketsComponent implements OnInit {
     private ticketService: TicketService,
     private customerService: CustomerService,
     private cartService: CartService,
-    private lineCartService: LineCartService
+    private lineCartService: LineCartService,
+    private sendEmailService: SendEmailService
   ) { }
 
   ngOnInit() {
@@ -50,9 +52,6 @@ export class BuyTicketsComponent implements OnInit {
   sendOrder(event: boolean, formIsValid: boolean): void {
     if (event && formIsValid) {
       this.addCustomer();
-
-      // send mail
-
     } else if (event && !formIsValid) {
       this.submitted = true;
     }
@@ -127,6 +126,16 @@ export class BuyTicketsComponent implements OnInit {
             () => { }
           );
         }
+        this.sendEmailService.sendOrderEmail(this.customerId, this.cartId).subscribe(
+          (event) => {
+            if (event) {
+              alert("Your order was sent to the Wild Circus");
+            } else {
+              alert("Error to send your order !!!");
+            }
+           }
+        );
+        
       }
     );
 
