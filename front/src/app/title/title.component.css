@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
-    .sectionTitle h2 {
-        font-size: 1.8rem !important;
+    h1 {
+        font-size: 3rem !important;
     }
 }
 
