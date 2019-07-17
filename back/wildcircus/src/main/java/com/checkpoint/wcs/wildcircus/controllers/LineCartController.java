@@ -26,6 +26,11 @@ public class LineCartController {
         return lineCartRepository.findById(id).get();
     }
 
+    @GetMapping("/line-cart-id/{cartId}")
+    public List<LineCart> getAllByCartId(@PathVariable("cartId") Long cartId) {
+        return lineCartRepository.findAllByCartId(cartId);
+    }
+
     @PostMapping("/line-cart")
     public LineCart create(@RequestBody LineCart lineCart) throws Exception {
         return lineCartRepository.save(lineCart);

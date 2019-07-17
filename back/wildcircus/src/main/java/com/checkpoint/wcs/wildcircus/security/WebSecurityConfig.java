@@ -67,10 +67,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				antMatchers( "/gallery").permitAll().
 				antMatchers( "/line-cart").permitAll().
 				antMatchers( "/line-cart/*").permitAll().
+				antMatchers( "/line-cart-id/*").permitAll().
 				antMatchers( HttpMethod.GET, "/performance").permitAll().
 				antMatchers( "/schedule").permitAll().
 				antMatchers( "/ticket").permitAll().
 				antMatchers( "/ticket/*").permitAll().
+				antMatchers( "/ticket-period/*").permitAll().
 				anyRequest().authenticated().and().
 				// on s'assure d'utiliser des stateless sessions
 				exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
