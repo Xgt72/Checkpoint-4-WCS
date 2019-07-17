@@ -13,11 +13,11 @@ public class LineCart {
     private Long id;
     private Long cart_id;
     private Long ticket_id;
-    private int quantity;
+    private Integer quantity;
 
     public LineCart() { }
 
-    public LineCart(Long cart_id, Long ticket_id, int quantity) {
+    public LineCart(Long cart_id, Long ticket_id, Integer quantity) {
         this.cart_id = cart_id;
         this.ticket_id = ticket_id;
         this.quantity = quantity;
@@ -43,11 +43,11 @@ public class LineCart {
         this.ticket_id = ticket_id;
     }
 
-    public int getQuantity() {
+    public Integer getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
 }

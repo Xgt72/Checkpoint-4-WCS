@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { MainButtonComponent } from './main-button/main-button.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { FooterComponent } from './footer/footer.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     MainButtonComponent,
     SectionTitleComponent,
-    FooterComponent
+    FooterComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

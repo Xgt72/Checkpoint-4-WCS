@@ -3,6 +3,7 @@ package com.checkpoint.wcs.wildcircus.security;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -59,8 +60,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				antMatchers( "/authenticate").permitAll().
 				antMatchers( "/register").permitAll(). // à supprimer après création d'un utilisateur.
 				// toutes les autres nécessitent un token valide
-				antMatchers( "/performance").permitAll().
+				antMatchers( "/cart").permitAll().
+				antMatchers( "/cart/*").permitAll().
 				antMatchers("/customer").permitAll().
+				antMatchers("/customer/*").permitAll().
+				antMatchers( "/gallery").permitAll().
+				antMatchers( "/line-cart").permitAll().
+				antMatchers( "/line-cart/*").permitAll().
+				antMatchers( HttpMethod.GET, "/performance").permitAll().
+				antMatchers( "/schedule").permitAll().
+				antMatchers( "/ticket").permitAll().
+				antMatchers( "/ticket/*").permitAll().
 				anyRequest().authenticated().and().
 				// on s'assure d'utiliser des stateless sessions
 				exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
