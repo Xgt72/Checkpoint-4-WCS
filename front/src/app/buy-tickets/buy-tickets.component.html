@@ -1,3 +1,78 @@
-<p>
-  buy-tickets works!
-</p>
+<section class="container p-3">
+  <form (ngSubmit)="myForm.valid" #myForm="ngForm">
+    <div class="row justify-content-around">
+      <div class="form-group col-12 col-md-6">
+        <label for="adultTicket" class="font-weight-bold col-12">Adult</label>
+        <div class="row justify-content-center">
+          <p class="col-7">Number of adult: </p>
+          <input type="number" id="adult" class="form-control col-4" name="adultTicket" placeholder=0 [(ngModel)]="adultQuantity" min=0>
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="childTicket" class="font-weight-bold col-12">Child</label>
+        <div class="row justify-content-center">
+          <p class="col-7">Number of child: </p>
+          <input type="number" id="child" class="form-control col-4" name="childTicket" placeholder=0 [(ngModel)]="childQuantity" min=0>
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="groupTicket" class="font-weight-bold col-12">Group</label>
+        <div class="row justify-content-center">
+          <p class="col-7">Number of person: </p>
+          <input type="number" id="group" class="form-control col-4" name="groupTicket" placeholder=0 [(ngModel)]="groupQuantity" min=0>
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="schoolTicket" class="font-weight-bold col-12">School</label>
+        <div class="row justify-content-center">
+          <p class="col-7">Number of student: </p>
+          <input type="number" id="school" class="form-control col-4" name="schoolTicket" placeholder=0 [(ngModel)]="schoolQuantity" min=0>
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <div class="row justify-content-center">
+          <label for="dateTicket" class="font-weight-bold col-7">Date</label>
+          <input type="date" id="day" class="form-control col-4" name="dateTicket" placeholder="" [(ngModel)]="day">
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <div class="row justify-content-center">
+          <label for="totalTicket" class="font-weight-bold col-7">Total to pay: </label>
+          <p id="date" class="form-control col-4" (ngModel)="total"min=0>
+            {{ total }} €
+          </p>
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <div class="row justify-content-center align-items-center">
+          <label for="customerFirstname" class="font-weight-bold col-5">Firstname: </label>
+          <input type="text" id="firstname" class="form-control col-6" name="customerFirstname"
+            placeholder="your firstname" [(ngModel)]="firstname">
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <div class="row justify-content-center align-items-center">
+          <label for="customerEmail" class="font-weight-bold col-3">Email: </label>
+          <input type="text" id="email" class="form-control col-8" name="customerEmail" placeholder="your email" [(ngModel)]="email">
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <div class="row justify-content-center align-items-center">
+          <label for="customerLastname" class="font-weight-bold col-5">Lastname: </label>
+          <input type="text" id="lastname" class="form-control col-6" name="customerLastname"
+            placeholder="your lastname" [(ngModel)]="lastname">
+        </div>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <div class="row justify-content-center align-items-center">
+          <label for="customerPhone" class="font-weight-bold col-3">Phone: </label>
+          <input type="text" id="phone" class="form-control col-8" name="customerPhone"
+            placeholder="your phone" [(ngModel)]="phone">
+        </div>
+      </div>
+    </div>
+    <app-main-button [buttonName]="buttonSend" (setSendOrder)="sendOrder($event, myForm.valid)"
+      class="row justify-content-center">
+    </app-main-button>
+  </form>
+</section>
