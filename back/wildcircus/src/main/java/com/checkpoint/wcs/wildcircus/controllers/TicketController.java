@@ -26,6 +26,11 @@ public class TicketController {
         return ticketRepository.findById(id).get();
     }
 
+    @GetMapping("/ticket-period/{period}")
+    public List<Ticket> getAllByPeriod(@PathVariable("period") String period) {
+        return ticketRepository.findAllByPeriod(period);
+    }
+
     @PostMapping("/ticket")
     public Ticket create(@RequestBody Ticket ticket) throws Exception {
         return ticketRepository.save(ticket);
