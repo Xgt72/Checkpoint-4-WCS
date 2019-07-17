@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+    .sectionTitle h2 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@font-face {
+    font-family: "Trocadero-Regular";
+    src: url("../../assets/font/Trocader.ttf") format("truetype");
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: "Trocadero-Regular", Arial, Helvetica, sans-serif;
+    color: #f37921;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+}
