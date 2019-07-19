@@ -1,5 +1,5 @@
 section {
-    border: 2px solid rgba(0,0,255,0.5);
+    border: 2px solid rgba(0, 0, 255, 0.5);
 }
 
 label {
@@ -8,4 +8,10 @@ label {
 
 p {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    label {
+        font-size: 1.5rem !important;
+    }
 }
