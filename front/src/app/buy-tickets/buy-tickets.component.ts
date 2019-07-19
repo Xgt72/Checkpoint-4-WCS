@@ -16,6 +16,7 @@ import { SendEmailService } from "../services/send-email.service";
 })
 export class BuyTicketsComponent implements OnInit {
 
+  private title = "Buy Tickets";
   private buttonSend: string = "Validate";
   private submitted: boolean = false;
   public adultQuantity: number = 0;
